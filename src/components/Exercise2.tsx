@@ -43,15 +43,23 @@ const productos = [
 ];
 
 export const Exercise2 = () => {
+  const productosFiltrados = () => {
+    const filter = productos
+      .filter((p) => p.especificaciones.memoriaRAM === "16GB")
+      .map((n) => n.nombre);
 
- const filter = productos.filter(p=> p.especificaciones.memoriaRAM === "16GB")
-  
+    return filter;
+  };
+
+  const finallyArray = productosFiltrados();
 
   //AYUDA:filter
 
-  return <div>
-    {filter.map((f)=>(
-        <p>{f.nombre}</p>
-    ))}
-  </div>;
+  return (
+    <div>
+      {finallyArray.map((n) => (
+        <p>{n}</p>
+      ))}
+    </div>
+  );
 };
