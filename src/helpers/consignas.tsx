@@ -2,6 +2,7 @@ import { Exercise1 } from "@/components/Exercise1"
 import { Exercise2 } from "@/components/Exercise2"
 import { Exercise3 } from "@/components/Exercise3"
 import { Exercise4 } from "@/components/Exercise4"
+import { Exercise5 } from "@/components/Exercise5"
 import { ReactNode } from "react"
 
 interface Tasks {
@@ -34,5 +35,11 @@ export const Tasks: Tasks[] = [
     description: 'Crear un componente que se vea como en el video, que renderize 2 botones, uno hecho con css y otro con tailwind solo que el que tiene css va a ser rojo y el de tailwind azul, cuando le hago click a uno , deshabilito el otro, TENER EN CUENTA que los estilos de disabled no se hacen solos como con material UI, los botones son identicos en propiedades de estilo , se ven diferentes porque tienen textos diferentes si queres podes ponerle la misma palabra a los 2 para que tengan el mismo largo',
     expectedResult: 'Que pase lo mismo que en el video',
     exercise: <Exercise4 />
+  },
+  {
+    numberTask: 5,
+    description: 'Tienes información sobre autores, libros y datos adicionales relacionados. El objetivo es crear una función obtenerArrayLibrosConTodaLaInformacion que tome esta información y devuelva un array de objetos que contengan la información completa de los libros, incluyendo el nombre y apellido del autor, la nacionalidad y los detalles adicionales de cada libro.',
+    expectedResult: 'Renderizar el resultado en una lista o componente a gusto lo importante son los datos',
+    exercise: <Exercise5 />
   }
 ]
