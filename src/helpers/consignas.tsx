@@ -1,9 +1,10 @@
-import { Exercise1 } from "@/components/Exercise1";
-import { Exercise2 } from "@/components/Exercise2";
-import { Exercise3 } from "@/components/Exercise3";
-import { Exercise4 } from "@/components/Exercise4";
-import { Exercise5 } from "@/components/Exercise5";
-import { ReactNode } from "react";
+import { Exercise1 } from "@/components/Exercise1"
+import { Exercise2 } from "@/components/Exercise2"
+import { Exercise3 } from "@/components/Exercise3"
+import { Exercise4 } from "@/components/Exercise4"
+import { Exercise5 } from "@/components/Exercise5"
+import { Exercise6 } from "@/components/Exercise6"
+import { ReactNode } from "react"
 
 interface Tasks {
   numberTask: number;
@@ -46,10 +47,14 @@ export const Tasks: Tasks[] = [
   },
   {
     numberTask: 5,
-    description:
-      "Tienes información sobre autores, libros y datos adicionales relacionados. El objetivo es crear una función obtenerArrayLibrosConTodaLaInformacion que tome esta información y devuelva un array de objetos que contengan la información completa de los libros, incluyendo el nombre y apellido del autor, la nacionalidad y los detalles adicionales de cada libro.",
-    expectedResult:
-      "Renderizar el resultado en una lista o componente a gusto lo importante son los datos",
-    exercise: <Exercise5 />,
+    description: 'Tienes información sobre autores, libros y datos adicionales relacionados. El objetivo es crear una función obtenerArrayLibrosConTodaLaInformacion que tome esta información y devuelva un array de objetos que contengan la información completa de los libros, incluyendo el nombre y apellido del autor, la nacionalidad y los detalles adicionales de cada libro.',
+    expectedResult: 'Renderizar el resultado en una lista o componente a gusto lo importante son los datos',
+    exercise: <Exercise5 />
   },
-];
+  {
+    numberTask: 6,
+    description: 'Tenes un array de productos con id , producto y precio , crea una funcion que permita aplicar un descuento a cada elemento del array',
+    expectedResult: 'Deberia quedar renderizado el nombre del producto y el precio al costado, uno debajo de otro , y en algun lugar un input con un boton que te permita ingresar un numero , solo numeros , y cuando haces click aplica el descuento en porcentaje a todos los productos , el precio se debe actualizar en el renderizado, mostrar un alert de que diga que el descuento se aplico correctamente',
+    exercise: <Exercise6 />
+  }
+]
