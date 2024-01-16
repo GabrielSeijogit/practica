@@ -5,6 +5,7 @@ import { Exercise4 } from "@/components/Exercise4"
 import { Exercise5 } from "@/components/Exercise5"
 import { Exercise6 } from "@/components/Exercise6"
 import { Exercise7 } from "@/components/Exercise7"
+import { Exercise8 } from "@/components/Exercise8"
 import { Exercise9 } from "@/components/Exercise9"
 import { ReactNode } from "react"
 
@@ -67,14 +68,14 @@ export const Tasks: Tasks[] = [
   },
   {
     numberTask: 8,
-    description: '',
+    description: 'PARTE 1: Ordena alfabéticamente el siguiente array de ciudades y muestra el resultado. PARTE 2: Ordena el siguiente array de números de manera descendente y muestra el resultado. PARTE 3: Ordena el siguiente array de objetos por la propiedad puntuacion de manera ascendente y muestra el resultado ',
     expectedResult: '',
-    exercise: 7
+    exercise: <Exercise8 />
   },
   {
     numberTask: 9,
     description: 'Instalar Jest',
     expectedResult: '',
-    exercise: <Exercise9/>
+    exercise: <Exercise9 />
   }
 ]
