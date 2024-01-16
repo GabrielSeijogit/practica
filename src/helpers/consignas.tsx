@@ -4,6 +4,8 @@ import { Exercise3 } from "@/components/Exercise3"
 import { Exercise4 } from "@/components/Exercise4"
 import { Exercise5 } from "@/components/Exercise5"
 import { Exercise6 } from "@/components/Exercise6"
+import { Exercise7 } from "@/components/Exercise7"
+import { Exercise9 } from "@/components/Exercise9"
 import { ReactNode } from "react"
 
 interface Tasks {
@@ -56,5 +58,23 @@ export const Tasks: Tasks[] = [
     description: 'Tenes un array de productos con id , producto y precio , crea una funcion que permita aplicar un descuento a cada elemento del array',
     expectedResult: 'Deberia quedar renderizado el nombre del producto y el precio al costado, uno debajo de otro , y en algun lugar un input con un boton que te permita ingresar un numero , solo numeros , y cuando haces click aplica el descuento en porcentaje a todos los productos , el precio se debe actualizar en el renderizado, mostrar un alert de que diga que el descuento se aplico correctamente',
     exercise: <Exercise6 />
+  },
+  {
+    numberTask: 7,
+    description: 'Se dejo una imagen de la Card de zafira como ejemplo , crear un componente nuevo en /components que se llame Card y se vea igual a la card de ejemplo',
+    expectedResult: 'llamar al nuevo componente Card dentro de Exercise7 para que quede una foto alado de la otra y sean comparables, el componente no tiene que poder romperse, desde el padre cuando se pasen las props como titulo precio,etc, tiene que poder soportar textos largos, Desarrollar con css y luego lo mismo pero con tailwind , crear CARDTailwind como componente',
+    exercise: <Exercise7 />
+  },
+  {
+    numberTask: 8,
+    description: '',
+    expectedResult: '',
+    exercise: 7
+  },
+  {
+    numberTask: 9,
+    description: 'Instalar Jest',
+    expectedResult: '',
+    exercise: <Exercise9/>
   }
 ]
