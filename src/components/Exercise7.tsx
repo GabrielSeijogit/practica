@@ -1,4 +1,6 @@
 import React from 'react'
+import { CardCss } from './CardCss'
+import { CardTailwind } from './CardTailwind'
 
 export const Exercise7 = () => {
     return (
@@ -8,9 +10,12 @@ export const Exercise7 = () => {
                 <img src='zafira-card.png' style={{ marginTop: 5 }} />
             </div>
 
-            <div>
+            <div className='bg-red'>
                 <h3>Imagen de Emmy</h3>
-                <img src='zafira-card.png' style={{ marginTop: 5 }} /> {/*TODO: reemplazar esta img por el componente card */}
+                <CardTailwind titulo={'Blood Cross'} precio={'$1520'}/>
+                {/* <CardCss titulo={'Blood Cross'} precio={'$1520'}/> */}
+                {/* <img src='zafira-card.png' style={{ marginTop: 5 }} />  */}
+                {/*TODO: reemplazar esta img por el componente card */}
             </div>
         </div>
     )
