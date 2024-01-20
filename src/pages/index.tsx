@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <div className="p-5 min-w-72">
+    <div className="p-5 min-w-72 container mx-auto">
       <div className="flex flex-col space-y-2">
         <p className="text-4xl mb-2">Ejercicios</p>
         <p className="text-xl mb-2">
