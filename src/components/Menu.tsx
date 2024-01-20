@@ -11,7 +11,7 @@ export const Menu: FC<MenuProps> = ({ children, onClose, open }) => {
         <>
             {open &&
                 <div
-                    className='absolute top-full left-30s mt-40 bg-white p-4 rounded shadow'
+                    className='absolute  mt-10 left-30 bg-white p-4 rounded shadow'
                     style={{ zIndex: 1000 }}
                 >
                     {children}
