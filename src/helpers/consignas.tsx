@@ -1,4 +1,5 @@
 import { Exercise1 } from "@/components/Exercise1"
+import { Exercise10 } from "@/components/Exercise10"
 import { Exercise2 } from "@/components/Exercise2"
 import { Exercise3 } from "@/components/Exercise3"
 import { Exercise4 } from "@/components/Exercise4"
@@ -77,5 +78,11 @@ export const Tasks: Tasks[] = [
     description: 'Instalar Jest',
     expectedResult: '',
     exercise: <Exercise9 />
+  },
+  {
+    numberTask: 10,
+    description: 'Hay un listado de notificaciones que tienen diferentes tipos pueden ser comentarios, likes ,etc... La idea es que cuando se le hace click a alguna se muestre un alert con un texto determinado para cada notificacion, pueden ser por ejemplo simular las acciones que se esperan cuando le haces click a una notificacion, por ejemplo Has leido el comentario, has visto el like .etc, simplemente para identificar que reconociste el tipo de notificacion y ejecutaste algo diferente para cada una',
+    expectedResult: 'Renderizar un alert por cada tipo de notificacion con un texto que identifique que accion se realiza  y cambiar el estado de READ de las notificaciones que ya se leyeron para que cambie el color de la notificacion',
+    exercise: <Exercise10 />
   }
 ]
