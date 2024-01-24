@@ -22,7 +22,7 @@ export const Task: FC<TaskProps> = ({ children, handleClick, isOpen, numberTask 
                 }
             </div>
             {isOpen &&
-                <div className='p-1 ml-4 bg-slate-400 rounded-md'>
+                <div className='p-1 ml-4 mr-4 bg-slate-400 rounded-md'>
                     {children}
                 </div>}
         </>
