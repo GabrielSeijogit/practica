@@ -24,10 +24,10 @@ export const Exercise9 = () => {
 
 
     // Modificar tsconfig.json
-    // "paths": {
-    //     "@/*": ["./src/*"]
-    //   },
-    //   "types": ["node", "jest", "@testing-library/jest-dom"]
+    //  "paths": {
+    //      "@/*": ["./src/*"]
+    //    },
+    //    "types": ["node", "jest", "@testing-library/jest-dom"]
 
     return (
         <div>AYUDA:
